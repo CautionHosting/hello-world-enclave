@@ -34,7 +34,7 @@ warp = "0.3"
 tokio = { version = "1", features = ["full"] }
 EOF
 
-RUN cargo build --release --target x86_64-unknown-linux-musl
+RUN RUSTFLAGS="-C target-feature=+crt-static" cargo build --release --target x86_64-unknown-linux-musl
 
 FROM scratch
 

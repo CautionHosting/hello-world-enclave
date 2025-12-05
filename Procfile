@@ -5,3 +5,5 @@ binary: /usr/local/bin/hello
 
 # Run command for the application
 run: /usr/local/bin/hello
+
+source: https://codeberg.org/caution/hello-world-enclave/archive/${COMMIT}.tar.gz

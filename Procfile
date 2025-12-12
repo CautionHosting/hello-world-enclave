@@ -7,3 +7,5 @@ binary: /usr/local/bin/hello
 run: /usr/local/bin/hello
 
 source: https://codeberg.org/caution/hello-world-enclave/archive/${COMMIT}.tar.gz
+
+ports: 8080

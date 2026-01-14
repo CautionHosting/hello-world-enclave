@@ -8,4 +8,4 @@ run: /usr/local/bin/hello
 
 app_sources: git@codeberg.org:caution/hello-world-enclave.git, git@github.com:CautionHosting/hello-world-enclave.git
 
-ports: 8080
+ports: 1337 

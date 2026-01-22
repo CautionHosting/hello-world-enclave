@@ -16,9 +16,9 @@ async fn main() {
     let hello = warp::path::end()
         .map(|| "Hello from Caution.co! Deployment successful!");
 
-    println!("Server starting on port 1337...");
+    println!("Server starting on port 8080...");
     warp::serve(hello)
-        .run(([0, 0, 0, 0], 1337))
+        .run(([0, 0, 0, 0], 8080))
         .await;
 }
 EOF
@@ -40,6 +40,6 @@ FROM scratch
 
 COPY --from=builder /app/hello/target/x86_64-unknown-linux-musl/release/hello /usr/local/bin/hello
 
-EXPOSE 1337 
+EXPOSE 8080 
 
 CMD ["hello"]

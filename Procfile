@@ -11,4 +11,4 @@ run: /usr/local/bin/hello
 # https://docs.caution.co/concepts/verifiability/
 app_sources: git@codeberg.org:caution/demo-hello-world-enclave.git
 
-ports: 8080 
+ports: 1337 

@@ -16,9 +16,9 @@ async fn main() {
     let hello = warp::path::end()
         .map(|| "Hello from Caution.co! Deployment successful!");
 
-    println!("Server starting on port 8080...");
+    println!("Server starting on port 8083...");
     warp::serve(hello)
-        .run(([0, 0, 0, 0], 8080))
+        .run(([0, 0, 0, 0], 8083))
         .await;
 }
 EOF

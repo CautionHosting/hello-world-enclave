@@ -11,6 +11,9 @@ enclave "default" {
     ]
   }
 
+  http {
+    port = 8083
+  }
   network {
     ingress {
       cidr_ipv4   = "0.0.0.0/0"

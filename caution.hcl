@@ -16,10 +16,10 @@ enclave "default" {
       port = 8083
       ip_protocol = "tcp"
     }
-  }
 
-  http {
-    port = 8083
+    http {
+      port   = 8083
+    }
   }
 
   unit "default" {

@@ -40,6 +40,6 @@ FROM scratch
 
 COPY --from=builder /app/hello/target/x86_64-unknown-linux-musl/release/hello /usr/local/bin/hello
 
-EXPOSE 8080 
+EXPOSE 8083
 
 CMD ["hello"]
